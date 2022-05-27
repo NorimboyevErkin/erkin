@@ -1,0 +1,41 @@
+.boxPicture {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #e6eaea;
+  // min-width:100%;
+  // min-height: 230px;
+  .img {
+    // aspect-ratio: auto 417 / 298; // nisbat
+    object-fit: cover !important;
+    transition: transform .5s ease-in-out;
+  }
+  &:hover .img {
+    transform: scale(1.05);
+  }
+  &:hover .shadow {
+    display: flex;
+  }
+  .shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+
+    .zoomIcon {
+      font-size: 1.5em;
+      color: rgba(255, 255, 255, 0.7);
+      transition: color .3s ease-in-out;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.boxItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+ transition: color .3s ease-in-out , background-color .3s ease-in-out;
+  // box-shadow: 0 0 11px rgba(177, 176, 176, 0.1);
+  background: var(--bg-color2);
+  color: var(--text-color1);
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--bg-color1);
+  }
+}
+
+.grid {
+  padding: 0 2em;
+  @media (max-width: 450px) {
+    padding: 0 10px;
+  }
+  margin-bottom: 70px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  @media (max-width: 350px) {
+    grid-template-columns: 1fr;
+  }
+  list-style: none;
+}

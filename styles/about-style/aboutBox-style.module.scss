@@ -1,0 +1,52 @@
+.boxItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  position: relative;
+  transition: background 0.3s ease-in-out;
+  background: var(--bg-color2);
+  color: var(--text-color1);
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--bg-color1);
+  }
+
+  .boxPicture {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #e6eaea;
+    // width: 330px;
+    // height: 230px;
+    .img {
+      // aspect-ratio: auto 417 / 298; // nisbat
+      object-fit: cover !important;
+      transition: transform 0.5s ease-in-out;
+    }
+    &:hover .img {
+      transform: scale(1.05);
+    }
+
+
+  }
+
+  .boxInfo {
+    background-color: var(--bg-color2);
+    padding: 20px;
+    p {
+      font-weight: 100;
+      color: var(--text-color1);
+    }
+  }
+}
+.mySwiper{
+  max-height: 100vh;
+  .img , img{
+    object-fit: cover !important;
+    object-position:bottom;
+  }
+
+}

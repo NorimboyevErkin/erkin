@@ -1,0 +1,25 @@
+.filterModalBoxs {
+    padding: 2em;
+    @media (max-width: 600px) {
+      padding: 1em;
+    }
+    background-color: var(--bg-color2);
+    transition: background 0.3s ease-in-out;
+  .modalBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--border1);
+  transition: border .3s ease-in-out;
+
+  }
+
+  .filterMadalTitle{
+      color: var(--text-color1);
+      margin: .5em 0;
+  }
+
+}
+

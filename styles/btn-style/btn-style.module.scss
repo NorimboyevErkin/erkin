@@ -1,0 +1,75 @@
+@mixin btnBox {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.5s linear;
+}
+
+@mixin btnHover {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  z-index: 1;
+}
+
+.btn1 {
+  @include btnBox();
+  padding: 0.8em 2.5em;
+  color: black;
+  font-size: 1.2em;
+  background-color: white;
+  &:hover > .btnHover1 {
+    animation: btn-animation 0.5s both;
+  }
+  &:hover , &:focus{
+    color: white;
+  }
+  .btnHover1 {
+    @include btnHover();
+    background-color: red;
+  }
+  .btnTitle1 {
+    z-index: 2;
+  }
+}
+
+.btn2 {
+  width: 100%;
+  @include btnBox();
+  background-color: var(--bg-color2);
+  height: 40px;
+  padding: 0 20px;
+  color: var(--text-color1);
+  font-size: 1.2em;
+  transition: background 0.3s ease-in-out;
+  &:hover > .btnHover2 {
+    animation: btn-animation 0.5s both;
+  }
+  &:hover, &:focus {
+    color:var(--bg-color1);
+  }
+  .btnHover2 {
+    @include btnHover();
+    background-color: var(--filter-hover-btn-bg);
+  }
+  .btnTitle2 {
+    z-index: 2;
+  }
+}
+
+@keyframes btn-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

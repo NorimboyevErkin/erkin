@@ -1,0 +1,31 @@
+.filterBox {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid var(--border1);
+  border-bottom: 1px solid var(--border1);
+  margin: 2em 0;
+  transition: border 0.3s ease-in-out;
+  padding: 0.5em 1em;
+  @media (max-width: 450px) {
+    padding: 5px 10px;
+  }
+  .filterNav {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .filterModalBox {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    right: 1em;
+    transform: translateY(100%);
+    z-index: 5;
+    @media (max-width: 450px) {
+      left: 10px;
+      right: 10px;
+    }
+    display: none;
+  }
+}

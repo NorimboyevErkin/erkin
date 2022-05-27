@@ -1,0 +1,100 @@
+//////////////////////////// InfoHeader
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    padding-bottom: 20px;
+    .title1{
+      width: 100%;
+    height: 20px;
+    margin-bottom: 12px;
+    line-height: 20px;
+    text-overflow: ellipsis; // text sig'may qolsa 1gap olib tawlaydi
+    white-space: nowrap; // text boxga sig'may qolsa tagiga tuwmay , to'g'ri davom etadi input (default)
+    overflow: hidden;
+      h3{
+cursor: pointer;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    // color: var(--text-color1);
+    transition: color .3s ease-in-out;
+    &:hover{
+      color: #64686a;
+    }
+      }
+    }
+    .title2{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    .boxLeft , .boxRight{
+      // color: var(--text-color1);
+      font-size: 14px;
+      font-weight: 300;
+      height: 20px;
+    padding-right: 10px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    }
+    }
+
+  }
+/////////////////////////InfoFooter
+  .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    .by{
+     min-height: 20px;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    .avatar{
+      border-radius: 50%;
+      object-fit: cover !important;
+    }
+    span{
+      font-weight: 300;
+color: var(--text-color1);
+
+display: flex;
+margin-left:5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      h4{
+      //  color: var(--text-color1);
+        margin: 0;
+        margin-left: 5px;
+        font-weight: 600;
+
+      }
+    }
+    }
+    .like{
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+      p{
+        
+      font-size: 14px;
+      // color: var(--text-color1);
+      margin: 0 5px;
+      }
+    }
+  }
+//////////////////////////
+.boxInfo {
+    background-color:var(--bg-color2);
+    padding: 20px;
+}

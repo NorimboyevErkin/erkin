@@ -1,0 +1,49 @@
+:root {
+  --bg-color1: #f4f7f6;
+  --bg-color1-opacity: rgba(244, 247, 246, 0.95);
+  --bg-color2: #fcfcfc;
+
+  --border1: #e6eaea;
+  --text-color1: #202121;
+  --pegnation-text-color1: #fcfcfc;
+  --btn-bg-color:red;
+  --btn-hover-color:#2b2b2b;
+
+--btn2-text-color:#ffff;
+
+  --pastel-green: #6edc5f;
+  --gainsboro: #dddddd;
+
+  --bg-loader1: rgba(0, 0, 0, 0.5);
+  --bg-modal-info: rgba(0, 0, 0, 0.5);
+  --btn-up-bg:rgba(0, 0, 0, 0.8);
+  --btn-up-color:white;
+
+
+  --pignation-bg-color: #fff;
+  --pignation-active-color: black;
+  --pignation-hover-color: #e6eaea;
+  --filter-hover-btn-bg: #3a3a3a;
+
+  --translate-btn: rgba(100, 100, 100, 0.07);
+}
+
+[dir="dark"] {
+  --bg-color1: #3a3a3a;
+  --bg-color2: #2b2b2b;
+  --bg-color1-opacity: rgb(43, 43, 43, 0.95);
+  --border1: #434343;
+  --text-color1: #adadad;
+  --bg-loader1: rgba(244, 247, 246, 0.5);
+  --pignation-active-color: #2b2b2b;
+  --pignation-hover-color: #fff;
+  --pignation-bg-color: #e6eaea;
+  --translate-btn: rgba(136, 136, 136, 0.1);
+  --filter-hover-btn-bg: #e6eaea;
+  --pegnation-text-color1:#adadad;
+  --btn-up-bg:rgba(244, 247, 246 ,.8);
+  --btn-bg-color:#f4f7f6;
+   --btn-hover-color:red;
+  --btn-up-color:#202121;
+  --btn2-text-color:#202121;
+}

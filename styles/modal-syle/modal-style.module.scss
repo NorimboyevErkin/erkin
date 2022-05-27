@@ -1,0 +1,97 @@
+.modalBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 20;
+  .modalContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    .modalHeader {
+      position: absolute;
+      top: 0;
+      z-index: 21;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .closeBtn {
+        all: unset;
+        font-size: 1.5em;
+        color: white;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          color: rgba(255, 255, 255, 0.8);
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+      }
+      .opacityBtn {
+        animation: noneBtn 0.5s ease-in-out forwards;
+      }
+    }
+    .modalMain {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .modalImg {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+      }
+    }
+    .modalFooter {
+      padding: 20px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      h3,
+      h4 {
+        color: white;
+      }
+    }
+  }
+}
+
+.down {
+  animation: downFooter 0.5s ease-in-out forwards;
+}
+
+@keyframes downFooter {
+  0% {
+    margin-top: 0;
+    opacity: 1;
+  }
+  100% {
+    margin-top: -100%;
+    opacity: 0;
+  }
+}
+
+@keyframes noneBtn {
+  0% {
+    margin-right: 0;
+    opacity: 1;
+  }
+  100% {
+    margin-right: -100%;
+    opacity: 0;
+  }
+}
